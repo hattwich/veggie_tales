@@ -1,6 +1,6 @@
 streamlit==1.24.0
-re==2.2.1
-PIL.Image==9.4.0
+requests==2.2.1
+pillow==9.4.0
 numpy==1.25.0
 tensorflow==2.12.0
 tensorflow_hub==0.13.0
