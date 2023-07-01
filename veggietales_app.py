@@ -8,7 +8,6 @@ import tensorflow_hub as hub
 import io 
 from Image_recognition import predict_picture
 from text_generator import get_fact, get_fact_kids, get_fact_kids, get_recipe, get_story
-from gtts import gTTS
 
     
 def button(text: str = None, color='#FFFFFF', height='20px'):
