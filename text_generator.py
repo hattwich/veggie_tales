@@ -1,6 +1,8 @@
 import openai
 import re
+import streamlit as st
 
+openai.api_key = st.secrets['my_key']
 
 def get_fact(ingredient,mode):
     response_fact = openai.Completion.create(
