@@ -10,14 +10,13 @@ Image classification app + text creation via openai API
 
 We built a Streamlit app structured in three main sections. In the first, the user can upload an image or take a picture of a vegetable that will then be classified according to a list of 16 classes. The second is intended for kids; based on the detected vegetable, openai API creates four facts and a story that are meant for the user to learn about the ingredient. The third is intended for a broader audience. The user gets five specific facts (historical, cultural, health, fun and bad) and a recipe suggestion. 
 
-For details on dependencies and libraries check [requirements.txt](). For getting your own API key for openai, follow [this]() link
+For details on dependencies and libraries check [requirements.txt](). For getting your own API key for openai, follow [this](https://platform.openai.com/docs/api-reference/authentication) link.
 
 ### Image classification model
 
 Classification is performed via the pre-trained deep learning model [InceptionV3](https://www.tensorflow.org/api_docs/python/tf/keras/applications/inception_v3) from Tensorflow. We unfroze the last 15 layers and trained them on 16 classes of the  [dataset](https://www.kaggle.com/datasets/kritikseth/fruit-and-vegetable-image-recognition) Fruits and Vegetables Image Recognition from kaggle. For details see the related [notebook]().
 
-Previously, we built up our own deep learning model, trained on two of the above *mentioned classes*. *Accuracy*. For details see the related [notebook](https://platform.openai.com/docs/api-reference/authentication).
-
+Previously, we built up our own deep learning model trained on only two classes. In order to increase the accuracy, we used a different [dataset](https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset) with a larger number of training images. For details see the related [notebook]().
 
 
 ### Outlook
@@ -42,24 +41,3 @@ Almuth Hattwich: [GitHub](https://github.com/0x6168) | [LinkedIn](https://www.li
 
 Gian Andrea Inkof: [GitHub](https://github.com/ginkof) | [LinkedIn](https://www.linkedin.com/in/inkof/)
 
-adding more classes (like fruits)
-Add another way to create the text
-
-
-Quickstart / How to use
-
-Streamlit App
-Check requirements (link)
-Need of API key from openai
-(https://platform.openai.com/docs/api-reference/authentication) 
-
-Image classification model
-6.  Credits
-Almuth Hattwich
-https://github.com/0x6168
-https://www.linkedin.com/in/almuth-hattwich/
-
-
-Dr. Gian Andrea Inkof
-https://github.com/ginkof
-https://www.linkedin.com/in/inkof/
