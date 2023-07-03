@@ -141,7 +141,7 @@ color_dictionary = {
 custom_objects = {'KerasLayer': hub.KerasLayer}
 #Load the model using the custom objects
 model = tf.keras.models.load_model(
-    'models/inception_16cl_16ep.h5', custom_objects=custom_objects)
+    'inception_16cl_16ep.h5', custom_objects=custom_objects)
 
 
 
