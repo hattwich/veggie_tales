@@ -1,9 +1,6 @@
 import openai
 import re
 
-# getting story/facts from chatgpt
-my_key = "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"
-openai.api_key = my_key
 
 def get_fact(ingredient,mode):
     response_fact = openai.Completion.create(
