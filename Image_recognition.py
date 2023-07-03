@@ -8,15 +8,11 @@ import numpy as np
 
 
 
-# # Upload our DL model
-# model = load_model("model_grayscale_10_8c.h5")
-
 # Define the custom objects dictionary
 custom_objects = {'KerasLayer': hub.KerasLayer}
-
 #Load the model using the custom objects
 model = tf.keras.models.load_model(
-    'inception_16cl_16ep.h5', custom_objects=custom_objects)
+    'models/inception_16cl_16ep.h5', custom_objects=custom_objects)
 
 
 class_names = ['cabbage',

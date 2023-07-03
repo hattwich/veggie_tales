@@ -23,20 +23,37 @@ def get_fact(ingredient,mode):
 
 # 4 facts for kids
 
+# def get4_fact_kids(ingredient):
+#     four_facts = openai.Completion.create(
+#         model="text-davinci-003",
+#         prompt=f"Tell me 4 facts, distinct from each other, in a form of a bulletted list about the vegetable {ingredient} as if I were a kid. Every fact needs to be about 250 characters and sould start with the character '-'. Make sure you end the fact with the last character.",
+#         temperature=1,
+#         max_tokens=200,
+#         top_p=1,
+#         frequency_penalty=0,
+#         presence_penalty=0
+#     )
+#     facts = four_facts['choices'][0]['text']
+#     split_facts = facts.split("\n")
+#     return [re.sub("-", "", fact)for fact in split_facts][2:]
+
+# 1 fact for kids
+
 def get_fact_kids(ingredient):
-    four_facts = openai.Completion.create(
+    response_fact = openai.Completion.create(
         model="text-davinci-003",
-        prompt=f"Tell me 4 facts, distinct from each other, in a form of a bulletted list about the vegetable {ingredient} as if I were a kid. Every fact needs to be about 250 characters and sould start with the character '-'. Make sure you end the fact with the last character.",
+        prompt=f"Suppose I'm a kid, max 10 years old. In about 250 characters, tell me a specific fact about the vegetable {ingredient}. Make sure you end the fact with the last character.",
         temperature=1,
         max_tokens=200,
         top_p=1,
         frequency_penalty=0,
         presence_penalty=0
     )
-    facts = four_facts['choices'][0]['text']
-    split_facts = facts.split("\n")
-    return [re.sub("-", "", fact)for fact in split_facts][2:]
 
+    #extraction
+    facts = response_fact['choices'][0]['text']
+    split_facts = facts.split("\n")
+    return [re.sub("\d. ", "", fact)for fact in split_facts][2:][0]
 
 
 # Recipe

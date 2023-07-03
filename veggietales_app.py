@@ -141,7 +141,7 @@ color_dictionary = {
 custom_objects = {'KerasLayer': hub.KerasLayer}
 #Load the model using the custom objects
 model = tf.keras.models.load_model(
-    'inception_16cl_16ep.h5', custom_objects=custom_objects)
+    'models/inception_16cl_16ep.h5', custom_objects=custom_objects)
 
 
 
@@ -243,20 +243,20 @@ elif choose == "Learning":
             button_with_triangles('-----------','#E2E0ED','20px')
             st.write('')
             with st.expander('Unwrap candy 1'):
-                st.write(st.session_state.kids_fact_1[0])
+                st.write(st.session_state.kids_fact_1)
             button_with_triangles('-----------','#FFC89C','20px')
             st.write('')
             with st.expander('Unwrap candy 2'):
-                st.write(st.session_state.kids_fact_2[1])
+                st.write(st.session_state.kids_fact_2)
         with col_facts_2:
             button_with_triangles('-----------','#FF2F92','20px')
             st.write('')
             with st.expander('Unwrap candy 3'):
-                st.write(st.session_state.kids_fact_3[2])
+                st.write(st.session_state.kids_fact_3)
             button_with_triangles('-----------','#92D050','20px')
             st.write('')
             with st.expander('Unwrap candy 4'):
-                st.write(st.session_state.kids_fact_4[3])
+                st.write(st.session_state.kids_fact_4)
         st.divider()
         col_margin_1, col_story, col_margin_2 = st.columns([0.1,0.6,0.2])
         with col_story:
