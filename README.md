@@ -1,6 +1,4 @@
 # Veggie Tales
-
-## Storyteller / Veggie tales
 Image classification app + text creation via openai API
 
 
