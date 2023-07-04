@@ -358,9 +358,12 @@ elif choose == "To know and taste":
 elif choose == "About":
     st.write('**About the creators**')
     st.write('Gian Andrea Inkof: [GitHub](https://github.com/ginkof) | [LinkedIn](https://www.linkedin.com/in/inkof/)')
-    st.write('Almuth Hattwich: [GitHub](https://github.com/0x6168) | [LinkedIn](https://www.linkedin.com/in/almuth-hattwich/)')
+    st.write('Almuth Hattwich: [GitHub](https://github.com/hattwich) | [LinkedIn](https://www.linkedin.com/in/almuth-hattwich/)')
+    st.write("")
     st.write('**Resources**')
     st.write("https://medium.com/codex/create-a-multi-page-app-with-the-new-streamlit-option-menu-component-3e3edaf7e7ad")  
+    st.write('https://www.kaggle.com/datasets/misrakahmed/vegetable-image-datased')
+    st.write("")
     st.write('**About content creation**')
     st.write('For creating our facts for kids, the story and the facts for adults we use the API from openai. We can never know the output. Please do not let your kids use the tool unsupervised. We apologize for inappropriate content.')  
     st.write('We are happy for feedback about other content creation options. Please reach out to us if you have thoughts or ideas.')

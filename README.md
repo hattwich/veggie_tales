@@ -34,7 +34,7 @@ Previously, we built up our own deep learning model trained on only two classes.
 
 ### The authors
 
-Almuth Hattwich: [GitHub](https://github.com/0x6168) | [LinkedIn](https://www.linkedin.com/in/almuth-hattwich/)
+Almuth Hattwich: [GitHub](https://github.com/hattwich) | [LinkedIn](https://www.linkedin.com/in/almuth-hattwich/)
 
 
 Gian Andrea Inkof: [GitHub](https://github.com/ginkof) | [LinkedIn](https://www.linkedin.com/in/inkof/)
