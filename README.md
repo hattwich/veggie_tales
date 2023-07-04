@@ -12,9 +12,9 @@ For details on dependencies and libraries check [requirements.txt](). For gettin
 
 ### Image classification model
 
-Classification is performed via the pre-trained deep learning model [InceptionV3](https://www.tensorflow.org/api_docs/python/tf/keras/applications/inception_v3) from Tensorflow. We unfroze the last 15 layers and trained them on 16 classes of the  [dataset](https://www.kaggle.com/datasets/kritikseth/fruit-and-vegetable-image-recognition) Fruits and Vegetables Image Recognition from kaggle. For details see the related [notebook]().
+Classification is performed via the pre-trained deep learning model [InceptionV3](https://www.tensorflow.org/api_docs/python/tf/keras/applications/inception_v3) from Tensorflow. We unfroze the last 15 layers and trained them on 16 classes of the  [dataset](https://www.kaggle.com/datasets/kritikseth/fruit-and-vegetable-image-recognition) Fruits and Vegetables Image Recognition from kaggle. For details see the related [notebook](https://github.com/hattwich/veggie_tales/blob/main/notebooks/inception_16classes.ipynb).
 
-Previously, we built up our own deep learning model trained on only two classes. In order to increase the accuracy, we used a different [dataset](https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset) with a larger number of training images. For details see the related [notebook]().
+Previously, we built up our own deep learning model trained on only two classes. In order to increase the accuracy, we used a different [dataset](https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset) with a larger number of training images. For details see the related [notebook](https://github.com/hattwich/veggie_tales/blob/main/notebooks/dl_2classes.ipynb).
 
 
 ### Outlook
