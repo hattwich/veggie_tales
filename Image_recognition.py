@@ -33,12 +33,6 @@ class_names = ['cabbage',
  'tomato']
 
 
-# #Defining picture size 
-# img_height = 244
-# img_width = 244
-
-
-
 def preprocess_image(image_path):
     image = Image.open(image_path).convert('RGB')  # Open image in RGB format
     # Resize the image to match the model's input size
